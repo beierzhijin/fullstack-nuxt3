@@ -1,12 +1,18 @@
 <script setup lang="ts">
-definePageMeta({
-  layout: 'another'
-})
+function enableCustomLayout() {
+  setPageLayout('another')
+}
+
+/* 不定义时为 default layout */
+
+// definePageMeta({
+//   layout: false
+// });
 </script>
 
 <template>
   <div>
-    About
+    <button @click="enableCustomLayout">Update layout</button>
   </div>
 </template>
 
