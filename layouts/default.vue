@@ -7,18 +7,12 @@
         <NuxtLink to="/" class="text-xl font-semibold p-2 hover:bg-gray-200">August</NuxtLink>
       </div>
 
-      <nav>
-        <ul>
-          <li>
-            <NuxtLink to="/">Main</NuxtLink>
-          </li>
-          <li>
-            <NuxtLink to="/about">About</NuxtLink>
-          </li>
-        </ul>
-      </nav>
+      <Menu />
     </header>
-    <slot></slot>
+
+    <main class="p-2">
+      <slot></slot>
+    </main>
   </div>
 </template>
 <script setup lang='ts'>
