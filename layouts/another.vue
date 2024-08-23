@@ -4,7 +4,7 @@
 
 <template>
   <div>
-    <div>another layout</div>
+    <div>另一套布局</div>
     <slot></slot>
   </div>
 </template>

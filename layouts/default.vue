@@ -1,3 +1,23 @@
+<script setup lang='ts'>
+// https://nuxt.com/docs/getting-started/seo-meta#dynamic-title
+useHead({
+  // as a string,
+  // where `%s` is replaced with the title
+  titleTemplate: '%s - August',
+  link: [
+    {
+      rel: 'preconnect',
+      href: 'https://fonts.googleapis.com'
+    },
+    {
+      rel: 'stylesheet',
+      href: 'https://fonts.googleapis.com/css2?family=Roboto&display=swap',
+      crossorigin: ''
+    }
+  ]
+})
+</script>
+
 <template>
   <!-- https://nuxt.com/docs/guide/directory-structure/layouts -->
   <!-- Unlike other components, your layouts must have a single root element to allow Nuxt to apply transitions between layout changes - and this root element cannot be a <slot />. -->
@@ -15,7 +35,9 @@
     </main>
   </div>
 </template>
-<script setup lang='ts'>
-</script>
 
-<style scoped></style>
+<style>
+body {
+  font-family: Roboto;
+}
+</style>

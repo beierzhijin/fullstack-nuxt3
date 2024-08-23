@@ -5,19 +5,22 @@
 </template>
 
 <script setup lang="ts">
+// server side rendering
 useSeoMeta({
-  title: '主页',
+  title: '我的主页',
   description: '这里是主页的描述',
   ogTitle: '[og:title]',
   ogDescription: '[og:description]',
   ogImage: '[og:image]',
   ogUrl: '[og:url]',
-  twitterTitle: '[twitter:title]',
-  twitterDescription: '[twitter:description]',
+  // https://developer.x.com/en/docs/x-for-websites/cards/overview/abouts-cards
+  twitterTitle: 'Main Page',
+  twitterDescription: 'This is my main page',
   twitterImage: '[twitter:image]',
   twitterCard: 'summary'
 })
 
+// server side rendering
 useHead({
   htmlAttrs: {
     lang: 'en'
