@@ -30,7 +30,7 @@ useHead({
       <Menu />
     </header>
 
-    <main class="p-2">
+    <main class="p-2 mb-10">
       <slot></slot>
     </main>
   </div>
