@@ -13,8 +13,9 @@
     "nuxt": "^3.13.0",
     "vue": "^3.4.38"
   },
-  "packageManager": "pnpm@9.7.0",
+  "packageManager": "pnpm@9.9.0",
   "devDependencies": {
+    "@nuxtjs/color-mode": "^3.4.4",
     "@nuxtjs/tailwindcss": "^6.12.1"
   }
 }
