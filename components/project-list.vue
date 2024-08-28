@@ -1,6 +1,6 @@
 <script setup>
 // https://nuxt.com/docs/getting-started/data-fetching#fetch
-// 只使用 $fetch 会在客户端也调用一次请求；服务端调用一次，客户端调用一次
+// 只使用 $fetch 会调用两次（服务端调用一次，客户端调用一次）
 // console.log(await $fetch('https://api.github.com/users/beierzhijin/repos'))
 
 // https://nuxt.com/docs/api/composables/use-fetch
@@ -22,7 +22,7 @@ const repos = computed(
   <section v-else class="grid grid-cols-1 gap-4">
     <ul>
       <li v-for="repository in repos" :key="repository.id"
-        class="border border-gray-200 rounded-sm p-4 hover:bg-gray-100 font-mono">
+        class="border border-gray-200 rounded-sm p-4 hover:bg-gray-100 hover:text-gray-700 font-mono">
         <a :href="repository.html_url" target="_blank">
           <div class="flex items-center justify-between text-sm">
             <div class="font-semibold"> {{ repository.name }}</div>
