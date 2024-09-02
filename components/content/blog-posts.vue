@@ -16,12 +16,16 @@
 // const posts = await queryContent('/blog').only(['_path', 'title']).find()
 const { data: posts } = await useAsyncData(
   'blog-list',
-  () => queryContent('/blog').only(['_path', 'title']).find()
+  () => queryContent('/blog')
+    .where({ _path: { $ne: '/blog' } })
+    .only(['_path', 'title'])
+    .find()
 )
 </script>
 
 <template>
-  <section>
+  <!-- https://github.com/tailwindlabs/tailwindcss-typography?tab=readme-ov-file#undoing-typography-styles -->
+  <section class="not-prose">
     <ul>
       <li v-for="post in posts" :key="post._path">
         <NuxtLink :to="post._path">{{ post.title }}</NuxtLink>
