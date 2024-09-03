@@ -1,5 +1,5 @@
 ---
-title: '文章标题'
+title: '2022年第一篇文章'
 description: 'meta description of the page'
 head:
   meta:
@@ -13,6 +13,7 @@ head:
       content: '© 2022 NuxtLabs'
     - name: 'og:title'
       content: 'OpenGraph title'
+publishedAt: 2022-08-01 16:06:00 # 自定义属性
 ---
 
 <!-- 
@@ -26,7 +27,7 @@ head:
 <!-- https://github.com/tailwindlabs/tailwindcss-typography -->
 <!-- https://tailwindcss-typography.vercel.app/ -->
 
-# 第一篇文章
+# 重走长征路
 
 ## Introduction 
 This is some text. *This is italic*.

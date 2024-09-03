@@ -45,7 +45,7 @@ useHead({
       </ClientOnly>
     </header>
 
-    <main class="p-2 mb-10">
+    <main class="p-2 my-10">
       <slot></slot>
     </main>
   </div>
