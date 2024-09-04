@@ -10,7 +10,7 @@
 useHead({
   // as a string,
   // where `%s` is replaced with the title
-  titleTemplate: '%s - August',
+  titleTemplate: '%s - 九月',
   link: [
     {
       rel: 'preconnect',

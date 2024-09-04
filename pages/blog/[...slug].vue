@@ -18,7 +18,7 @@
  * 路由对应 /blog ，/blog/first，/blog/second，/blog/2023/first
  */
 const route = useRoute()
-console.log(route.params.slug)
+// console.log(route.params.slug)
 </script>
 
 <style scoped></style>

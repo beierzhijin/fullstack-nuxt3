@@ -32,7 +32,7 @@ const posts = computed(() => {
   for (const post of data.value) {
     const year = new Date(post.publishedAt).getFullYear()
     const displayYear = year !== lastYear
-    console.log(year, displayYear)
+    // console.log(year, displayYear)
     post.displayYear = displayYear
     post.year = year
     result.push(post)
@@ -41,7 +41,7 @@ const posts = computed(() => {
   return result
 })
 
-console.log(posts)
+// console.log(posts)
 </script>
 
 <template>
