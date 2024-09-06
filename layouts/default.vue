@@ -28,11 +28,11 @@ useHead({
 <template>
   <!-- https://nuxt.com/docs/guide/directory-structure/layouts -->
   <!-- Unlike other components, your layouts must have a single root element to allow Nuxt to apply transitions between layout changes - and this root element cannot be a <slot />. -->
-  <div class="container mx-auto max-w-2xl">
+  <div class="container mx-auto max-w-4xl">
     <header class="flex justify-between items-center">
       <div class="flex items-center space-x-12">
         <div>
-          <NuxtLink to="/" class="text-xl font-semibold p-2 hover:bg-gray-200">August</NuxtLink>
+          <NuxtLink to="/" class="text-xl font-semibold p-2 hover:bg-gray-200 hover:text-gray-600">August</NuxtLink>
         </div>
 
         <Menu />
