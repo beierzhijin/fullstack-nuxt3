@@ -39,7 +39,7 @@ useHead({
       </div>
 
       <!-- 确保在 ClientOnly 中，否则会报 Hydration text content mismatch... -->
-      <!-- ColorModeSelector部分在服务端渲染，部分在客户端渲染，服务端无法访问browser客户端的storage，就会报这个warning -->
+      <!-- ColorModeSelector 部分在服务端渲染，部分在客户端渲染，服务端无法访问browser客户端的storage，就会报这个warning -->
       <ClientOnly>
         <ColorModeSelector />
       </ClientOnly>

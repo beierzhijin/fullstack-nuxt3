@@ -1,6 +1,6 @@
 <template>
   <div>
-    welcome to the main page
+    欢迎进入主页
   </div>
 </template>
 
